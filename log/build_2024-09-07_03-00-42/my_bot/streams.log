@@ -1,1 +1,0 @@
-[0.032s] Invoking command in '/home/ros2_ws/src/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros2_ws/src/my_bot -DCMAKE_INSTALL_PREFIX=/home/ros2_ws/src/install/my_bot
