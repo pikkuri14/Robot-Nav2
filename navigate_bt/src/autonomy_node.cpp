@@ -24,7 +24,7 @@ void AutonomyNode::setup()
       std::bind(&AutonomyNode::update_behavior_tree, this));
 
   rclcpp::spin(shared_from_this());
-  rclcpp::shutdown();
+//   rclcpp::shutdown();
 }
 
 void AutonomyNode::create_behavior_tree()
@@ -58,6 +58,7 @@ void AutonomyNode::update_behavior_tree()
   else if (tree_status == BT::NodeStatus::SUCCESS)
   {
     RCLCPP_INFO(this->get_logger(), "Finished Navigation");
+    rclcpp::shutdown();
   }
   else if (tree_status == BT::NodeStatus::FAILURE)
   {
